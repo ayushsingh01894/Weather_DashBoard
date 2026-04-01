@@ -41,3 +41,30 @@ Clean dashboard showing:
 - Temperature chart
 
 ---
+## 🎨 UI Highlights
+
+- Glassmorphism Dashboard Design  
+- Responsive Grid Layout  
+- Dark / Light Mode Support  
+- Smooth Animations & Hover Effects  
+- Weather-based Dynamic Background  
+- Clean Card Components  
+- Scrollable Hourly Forecast  
+- Full-width Temperature Chart  
+
+---
+
+## 📱 Responsive Design
+
+Works on:
+- Desktop 💻
+- Tablet 📱
+- Mobile 📲
+
+CSS Features Used:
+- Flexbox
+- CSS Grid
+- Media Queries
+- Backdrop Filter (Glass UI)
+- CSS Variables
+- Gradient BackgroundsS
