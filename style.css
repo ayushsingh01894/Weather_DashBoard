@@ -1,0 +1,250 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:25px;
+color:#fff;
+transition:.3s;
+}
+
+body.dark{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* container */
+.app{
+width:100%;
+max-width:1200px;
+padding:18px;
+border-radius:22px;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(14px);
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+/* search */
+.search-bar{
+display:flex;
+gap:10px;
+margin-bottom:15px;
+}
+
+.search-bar input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,.15);
+color:white;
+outline:none;
+}
+
+.search-bar button{
+padding:10px 14px;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,.2);
+color:white;
+cursor:pointer;
+}
+
+/* main card */
+.main-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.main-card h2{font-size:22px;}
+.main-card h1{font-size:48px;}
+.main-card img{width:70px}
+
+/* details */
+.details{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin:12px 0;
+}
+
+.card{
+background:rgba(0,0,0,.25);
+padding:12px;
+border-radius:14px;
+text-align:center;
+}
+
+/* sunrise */
+.sun{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+background:rgba(0,0,0,.25);
+padding:12px;
+border-radius:14px;
+}
+
+/* hourly */
+.hourly{
+display:flex;
+gap:10px;
+overflow:hidden;
+}
+
+.hour-card{
+background:rgba(0,0,0,.25);
+padding:8px;
+border-radius:12px;
+min-width:65px;
+text-align:center;
+}
+
+/* forecast */
+.forecast{
+display:flex;
+gap:10px;
+}
+
+.forecast-card{
+background:rgba(0,0,0,.25);
+padding:8px;
+border-radius:12px;
+min-width:65px;
+text-align:center;
+}
+
+/* chart */
+canvas{
+margin-top:10px;
+background:rgba(0,0,0,.25);
+border-radius:16px;
+padding:10px;
+height:200px !important;
+}
+
+/* toggle */
+.unit-toggle{
+width:100%;
+margin-top:8px;
+padding:10px;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,.2);
+color:white;
+cursor:pointer;
+}
+
+/* loader */
+.loader{
+border:4px solid rgba(255,255,255,.3);
+border-top:4px solid white;
+border-radius:50%;
+width:28px;
+height:28px;
+animation:spin 1s linear infinite;
+margin:8px auto;
+display:none;
+}
+
+@keyframes spin{
+0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}
+
+/* DESKTOP GOOGLE STYLE */
+@media(min-width:1000px){
+
+.app{
+display:grid;
+grid-template-columns: 2fr 1fr 1fr;
+grid-template-rows:auto auto auto;
+gap:18px;
+}
+
+/* full width search */
+.search-bar{
+grid-column:1/4;
+}
+
+/* left hero */
+.main-card{
+grid-column:1/2;
+}
+
+/* forecast under hero */
+.forecast{
+grid-column:1/2;
+}
+
+/* widgets right */
+.details{
+grid-column:2/3;
+}
+
+.sun{
+grid-column:3/4;
+}
+
+.hourly{
+grid-column:2/4;
+}
+.chart-box{
+height:320px;
+width:100%;
+position:relative;
+margin-top:25px;
+}
+
+canvas{
+height:100% !important;
+width:100% !important;
+padding:15px;
+border-radius:18px;
+background:rgba(15,23,42,0.55);
+}
+.app canvas{
+grid-column:1/4;
+}
+.chart-box{
+grid-column:1 / -1;
+}
+.unit-toggle{
+grid-column:1/4;
+}
+
+}
+
+/* dark cards */
+body.dark .app{
+background:rgba(15,23,42,.9);
+}
+
+body.dark .card,
+body.dark .forecast-card,
+body.dark .hour-card,
+body.dark .sun,
+body.dark canvas{
+background:rgba(30,41,59,.9);
+}
+
+body.dark .search-bar input,
+body.dark .search-bar button{
+background:rgba(30,41,59,.9);
+}
+
+canvas{
+height:260px !important;
+margin-top:20px;
+padding:20px;
+background:rgba(0,0,0,0.25);
+border-radius:20px;
+}
