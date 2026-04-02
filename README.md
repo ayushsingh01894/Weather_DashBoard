@@ -68,3 +68,24 @@ CSS Features Used:
 - Backdrop Filter (Glass UI)
 - CSS Variables
 - Gradient BackgroundsS
+---
+## ⚙️ JavaScript Features
+
+- Fetch Weather using OpenWeather API  
+- Auto Location Detection (Geolocation API)  
+- Dynamic Weather Icons  
+- Hourly Forecast Generation  
+- 5 Day Forecast Logic  
+- Temperature Unit Toggle (°C / °F)  
+- Dark / Light Mode Toggle  
+- Dynamic Background based on Weather  
+- Sunrise & Sunset Time Conversion  
+- 24 Hour Temperature Chart (Chart.js)  
+- Loading Spinner while Fetching Data  
+
+---
+
+## 🔌 API Used
+
+OpenWeather API  
+https://openweathermap.org/api
