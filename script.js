@@ -1,4 +1,4 @@
-const apiKey = "e66535daec5214e4435ab01262b2f92e";
+const apiKey = "be2f1b9c2fefd315a04ad107c3664c83";
 let isCelsius = true;
 
 function toggleTheme(){
